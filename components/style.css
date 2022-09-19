@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --dark-gray: hsl(0, 0%, 19%);
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  background-image: url("../assets/desktop/bg-image-daytime.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-display {
+  position: relative;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-block: 2.5rem 4.5rem;
+  position: relative;
+  z-index: 100;
+}
+
+.quote,
+.quote-box p {
+  color: var(--white);
+}
+
+.quote {
+  width: 50%;
+  margin-bottom: 0.8rem;
+}
+.quote p {
+  line-height: 1.5;
+}
+.quote img {
+  cursor: pointer;
+}
+
+.quote-box > p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* .quote p {} */
+
+/* CLOCK INFO */
+.clock-info {
+  color: #fff;
+}
+
+.clock-info div h1 {
+  text-transform: uppercase;
+  font-size: 11.5rem;
+  display: inline;
+}
+.zone {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.greeting {
+  gap: 0.5rem;
+}
+.greeting p,
+.location {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.location {
+  font-weight: bold;
+}
+
+/* MORE */
+
+.more {
+  cursor: pointer;
+  background-color: #fff;
+  width: 100px;
+  /* height: 50px; */
+  padding: 0.3rem;
+  border-radius: 50px;
+  gap: 0.5rem;
+}
+.arrow {
+  width: 25px;
+  transition: transform 0.4s linear;
+}
+.more span {
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: var(--dark-gray);
+}
+
+/* HIDDEN MORE INFO */
+
+.more-info {
+  width: 100%;
+  height: 50vh;
+  /* padding: ; */
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-block: 3rem;
+  color: var(--dark-gray);
+}
+.cont {
+  width: 50%;
+  height: 100%;
+}
+
+.timezone p:nth-child(2) {
+  text-transform: capitalize;
+}
+
+hr {
+  width: 1px;
+  height: 100%;
+}
+.num p:nth-child(1) {
+  word-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.num p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.days {
+  padding-left: 4rem;
+}
