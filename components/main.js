@@ -1,5 +1,5 @@
 "use strict";
-
+const main = document.querySelector("main");
 const viewMore = document.querySelector(".more");
 const moreText = document.querySelector(".more span");
 const arrow = document.querySelector(".arrow");
@@ -11,4 +11,5 @@ viewMore.addEventListener("click", () => {
   } else {
     moreText.textContent = "more";
   }
+  main.classList.toggle("shift");
 });

@@ -37,3 +37,8 @@
 .rotate {
   transform: rotate(180deg);
 }
+
+.shift {
+  /* overflow-y: unset; */
+  transform: translateY(-50%);
+}
