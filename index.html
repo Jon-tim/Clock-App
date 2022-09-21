@@ -17,26 +17,25 @@
       <section class="main-display">
         <div class="main-content between">
           <div class="quote-box">
-            <div class="quote start">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                quae temporibus suscipit delectus, molestiae id accusantium
-                perspiciatis est molestias! Cupiditate doloribus consequatur
-                excepturi quae voluptas!"
-              </p>
-              <img class="refresh"  src="assets/desktop/icon-refresh.svg" alt="refresh icon" />
+            <div class="quote">
+              <q> </q>
             </div>
-            <p>Lorem, ipsum.</p>
+            <p class="author"></p>
+            <img
+              class="refresh"
+              src="assets/desktop/icon-refresh.svg"
+              alt="refresh icon"
+            />
           </div>
           <div class="clock-info row-between">
             <div>
               <div class="greeting align-center">
                 <img src="assets/desktop/icon-sun.svg" alt="sun icon" />
-                <p>good <span>morning</span>, it's currently</p>
+                <p>good <span class="greet">morning</span>, it's currently</p>
               </div>
-              <h1>11:30</h1>
-              <span class="zone">bst</span>
-              <p class="location">in <span>lorem</span>, <span>ipsum</span></p>
+              <h1> <span class="hour"></span>:<span class="minute"></span></h1>
+              <span class="zoneAbbr"></span>
+              <p class="location">in <span class="city"></span>, <span class="country"></span></p>
             </div>
             <div class="more center">
               <span>more</span>
@@ -54,22 +53,22 @@
           <div class="cont between">
             <div class="timezone num">
               <p>current timezone</p>
-              <p>Lorem Ipsum</p>
+              <p class="zone"></p>
             </div>
             <div class="year day num">
               <p>day of the year</p>
-              <p>911</p>
+              <p class="yearday"></p>
             </div>
           </div>
           <hr />
           <div class="cont days between">
             <div class="week day num">
               <p>day of the week</p>
-              <p>911</p>
+              <p class="weekday"></p>
             </div>
             <div class="week-number num">
               <p>week number</p>
-              <p>91</p>
+              <p class="weeknum"></p>
             </div>
           </div>
         </div>
