@@ -107,10 +107,9 @@ function timer() {
     icon.src = "assets/desktop/icon-moon.svg";
     icon.setAttribute("alt", "moon icon");
   }
-  setInterval(timer, 1000);
 }
 
+setInterval(timer, 1000);
 timer();
-
 
 //AUTOMATICALLY UPDATE THE TIME-----------------------------------
