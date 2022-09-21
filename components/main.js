@@ -28,6 +28,7 @@ async function fetchQuote() {
 }
 
 fetchQuote();
+setInterval(fetchQuote, 5000);
 
 //GET TIMEZONES-----------------------------------
 const zone = document.querySelector(".zone");
@@ -47,13 +48,11 @@ async function fetchTime() {
   yearDay.textContent = data.day_of_year;
   zoneAbbr.textContent = data.abbreviation;
 }
-// console.log(clientIp);
 
 fetchTime();
 
 refresh.addEventListener("click", () => {
   fetchQuote();
-  // refresh.style.animation = "spin 0.5s linear";
 });
 
 // GET CITY/COUNTRY-----------------------------
@@ -64,11 +63,9 @@ async function fetchLocation() {
     "https://api.ipbase.com/v2/info?apikey=7xh59lN3vHZUQPXJyXuCp5hLer9KyhZeWYPEUBqf"
   );
   let data = await response.json();
-  // console.log(data);
   country.textContent = data.data.location.country.name;
   city.textContent = data.data.location.city.name;
 }
-
 
 fetchLocation();
 
