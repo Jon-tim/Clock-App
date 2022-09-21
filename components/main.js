@@ -56,18 +56,18 @@ refresh.addEventListener("click", () => {
 });
 
 // GET CITY/COUNTRY-----------------------------
-const city = document.querySelector(".city");
-const country = document.querySelector(".country");
-async function fetchLocation() {
-  let response = await fetch(
-    "https://api.ipbase.com/v2/info?apikey=7xh59lN3vHZUQPXJyXuCp5hLer9KyhZeWYPEUBqf"
-  );
-  let data = await response.json();
-  country.textContent = data.data.location.country.name;
-  city.textContent = data.data.location.city.name;
-}
+// const city = document.querySelector(".city");
+// const country = document.querySelector(".country");
+// async function fetchLocation() {
+//   let response = await fetch(
+//     "https://api.ipbase.com/v2/info?apikey=7xh59lN3vHZUQPXJyXuCp5hLer9KyhZeWYPEUBqf"
+//   );
+//   let data = await response.json();
+//   country.textContent = data.data.location.country.name;
+//   city.textContent = data.data.location.city.name;
+// }
 
-fetchLocation();
+// fetchLocation();
 
 //GET TIME----------------------------------
 
