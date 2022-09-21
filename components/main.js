@@ -73,14 +73,13 @@ fetchLocation();
 
 //GET TIME----------------------------------
 
-const date = new Date();
-
 const hour = document.querySelector(".hour");
 const minute = document.querySelector(".minute");
 const daytime = document.querySelector(".greet");
 const icon = document.querySelector(".greeting img");
 
 function timer() {
+  const date = new Date();
   let hr = date.getHours();
   let min = date.getMinutes();
 
@@ -109,8 +108,7 @@ function timer() {
   }
 }
 
-setInterval(timer, 1000);
-
 timer();
+setInterval(timer, 1000);
 
 //AUTOMATICALLY UPDATE THE TIME-----------------------------------
