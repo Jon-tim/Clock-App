@@ -39,7 +39,7 @@ const yearDay = document.querySelector(".yearday");
 
 // -----------
 async function fetchTime() {
-  let response = await fetch("http://worldtimeapi.org/api/ip");
+  let response = await fetch("https://worldtimeapi.org/api/ip");
   let data = await response.json();
 
   zone.textContent = data.timezone;
