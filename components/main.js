@@ -63,6 +63,7 @@ async function fetchLocation() {
     "https://api.ipbase.com/v2/info?apikey=7xh59lN3vHZUQPXJyXuCp5hLer9KyhZeWYPEUBqf"
   );
   let data = await response.json();
+  // console.log(data);
   country.textContent = data.data.location.country.name;
   city.textContent = data.data.location.city.name;
 }
@@ -70,6 +71,12 @@ async function fetchLocation() {
 fetchLocation();
 
 //GET TIME----------------------------------
+
+//var dt = new Date();var hours = dt.getHours() ; 
+// gives the value in 24 hours formatvar AmOrPm = hours >= 12 ? 'pm' : 'am';
+//hours = (hours % 12) || 12;var minutes = dt.getMinutes() ;
+//var finalTime = "Time  - " + hours + ":" + minutes + " " + AmOrPm; 
+//finalTime // final time Time - 22:10
 
 const hour = document.querySelector(".hour");
 const minute = document.querySelector(".minute");
@@ -80,9 +87,6 @@ function timer() {
   const date = new Date();
   let hr = date.getHours();
   let min = date.getMinutes();
-
-  hour.textContent = hr;
-  minute.textContent = min;
 
   //TASKS--------------------------------
 
@@ -95,6 +99,15 @@ function timer() {
   } else {
     daytime.textContent = "evening";
   }
+  //-------------- -------
+
+  hr = hr < 10 ? "0" + hr : hr;
+  min = min < 10 ? "0" + min : min;
+
+  //-------------- -------
+  hour.textContent = hr;
+  minute.textContent = min;
+  //-------------- -------
 
   // - The greeting icon and background image also changes depending on the time of day.
   if (hr >= 5 && hr <= 18) {
