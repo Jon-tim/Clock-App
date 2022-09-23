@@ -39,9 +39,9 @@ const yearDay = document.querySelector(".yearday");
 
 // -----------
 async function fetchTime() {
-  let response = await fetch("http://worldtimeapi.org/api/ip");
+  let response = await fetch("https://worldtimeapi.org/api/ip");
   let data = await response.json();
-
+  // console.log(data);
   zone.textContent = data.timezone;
   weekDay.textContent = data.day_of_week;
   weekNum.textContent = data.week_number;
@@ -72,10 +72,10 @@ fetchLocation();
 
 //GET TIME----------------------------------
 
-//var dt = new Date();var hours = dt.getHours() ; 
+//var dt = new Date();var hours = dt.getHours() ;
 // gives the value in 24 hours formatvar AmOrPm = hours >= 12 ? 'pm' : 'am';
 //hours = (hours % 12) || 12;var minutes = dt.getMinutes() ;
-//var finalTime = "Time  - " + hours + ":" + minutes + " " + AmOrPm; 
+//var finalTime = "Time  - " + hours + ":" + minutes + " " + AmOrPm;
 //finalTime // final time Time - 22:10
 
 const hour = document.querySelector(".hour");
@@ -113,7 +113,8 @@ function timer() {
   if (hr >= 5 && hr <= 18) {
     icon.src = "assets/desktop/icon-sun.svg";
   } else {
-    document.body.style.backgroundImage = `url("../assets/desktop/bg-image-nighttime.jpg")`;
+    /* change this depending on the screen size */
+    document.body.style.backgroundImage = `url("../assets/mobile/bg-image-nighttime.jpg")`;
     icon.src = "assets/desktop/icon-moon.svg";
     icon.setAttribute("alt", "moon icon");
   }

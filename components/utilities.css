@@ -32,6 +32,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .rotate {
@@ -42,17 +43,80 @@
   transform: translateY(-45%);
 }
 
-/* .spin {
-  animation: spin 0.5s linear;
-} */
-
-/* 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+/* ?MEDIA QUERIES */
+@media (min-width: 768px) {
+  .main-content {
+    width: 80%;
+    padding-inline: unset;
+    padding-block: 2.5rem 4rem;
   }
-  to {
-    transform: rotate(180deg);
+  .quote {
+    width: 50%;
+    /* margin-bottom: 0.8rem; */
   }
 
-} */
+  .clock-info div h1 {
+    font-size: 11.5rem;
+  }
+  .zoneAbbr {
+    font-size: 2rem;
+  }
+
+  .greeting p {
+    font-size: 1rem;
+  }
+
+  .more {
+    margin-top: unset;
+  }
+
+  /* hidden content */
+  .more-content {
+    /* padding: ; */
+    margin: 0 auto;
+    width: 80%;
+    /* color: var(--dark-gray); */
+    height: 100%;
+  }
+  .num p:nth-child(2) {
+    font-size: 3rem;
+    /* font-weight: 600; */
+  }
+
+  .days {
+    padding-left: 4rem;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  .one {
+    border-right: 1px solid var(--dark-gray);
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  .cont {
+    width: 50%;
+    /* height: 100%; */
+  }
+
+  .num p:nth-child(1) {
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .more-content {
+    display: flex;
+    align-items: center;
+    flex-direction: unset;
+    gap: unset;
+  }
+  
+  .cont div {
+    display: flex;
+    align-items: center;
+    /* justify-content: unset; */
+  }
+}
