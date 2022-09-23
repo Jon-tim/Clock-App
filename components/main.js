@@ -72,22 +72,12 @@ fetchLocation();
 
 //GET TIME----------------------------------
 
-<<<<<<< HEAD
 //var dt = new Date();var hours = dt.getHours() ;
 // gives the value in 24 hours formatvar AmOrPm = hours >= 12 ? 'pm' : 'am';
 //hours = (hours % 12) || 12;var minutes = dt.getMinutes() ;
 //var finalTime = "Time  - " + hours + ":" + minutes + " " + AmOrPm;
 //finalTime // final time Time - 22:10
 
-||||||| 6de9290
-=======
-//var dt = new Date();var hours = dt.getHours() ; 
-// gives the value in 24 hours formatvar AmOrPm = hours >= 12 ? 'pm' : 'am';
-//hours = (hours % 12) || 12;var minutes = dt.getMinutes() ;
-//var finalTime = "Time  - " + hours + ":" + minutes + " " + AmOrPm; 
-//finalTime // final time Time - 22:10
-
->>>>>>> 59e4e3e704b032481cdf4ad2963d499a4300dd96
 const hour = document.querySelector(".hour");
 const minute = document.querySelector(".minute");
 const daytime = document.querySelector(".greet");
